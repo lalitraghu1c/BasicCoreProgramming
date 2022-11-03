@@ -10,7 +10,7 @@ namespace BasicCoreProgramming
             while (flag)
             {
                 Console.WriteLine("Welcome to Basic Core Programming Problems" + "\n" + "Enter your Choice");
-                Console.WriteLine("1. Flip Coin" + "\n" + "2. Leap Year" + "\n" + "3. Power of Two" + "\n" + "4. Exit");
+                Console.WriteLine("1. Flip Coin" + "\n" + "2. Leap Year" + "\n" + "3. Power of Two" + "\n" + "4. Harmonic Number" + "\n" + "5. Exit");
                 int choice = Convert.ToInt32(Console.ReadLine());
                 switch (choice)
                 {
@@ -27,6 +27,10 @@ namespace BasicCoreProgramming
                         power.Power();
                         break;
                     case 4:
+                        HarmonicNumber harmonic = new HarmonicNumber();
+                        harmonic.Harmonic();
+                        break;
+                    case 5:
                         flag = false;
                         Console.WriteLine("Try Again");
                         break;
