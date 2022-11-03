@@ -9,8 +9,8 @@ namespace BasicCoreProgramming
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("Welcome to Basic Core Programming Problems" + "\n\n" + "Enter your Choice");
-                Console.WriteLine("1. Flip Coin" + "\n" + "2. Leap Year" + "\n" + "3. Exit \n");
+                Console.WriteLine("Welcome to Basic Core Programming Problems" + "\n" + "Enter your Choice");
+                Console.WriteLine("1. Flip Coin" + "\n" + "2. Leap Year" + "\n" + "3. Power of Two" + "\n" + "4. Exit");
                 int choice = Convert.ToInt32(Console.ReadLine());
                 switch (choice)
                 {
@@ -23,6 +23,10 @@ namespace BasicCoreProgramming
                         leap.Leap();
                         break;
                     case 3:
+                        PowerOfTwo power = new PowerOfTwo();
+                        power.Power();
+                        break;
+                    case 4:
                         flag = false;
                         Console.WriteLine("Try Again");
                         break;
