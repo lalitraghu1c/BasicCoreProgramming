@@ -10,7 +10,7 @@ namespace BasicCoreProgramming
             while (flag)
             {
                 Console.WriteLine("Welcome to Basic Core Programming Problems" + "\n" + "Enter your Choice");
-                Console.WriteLine("1. Flip Coin" + "\n" + "2. Leap Year" + "\n" + "3. Power of Two" + "\n" + "4. Harmonic Number" + "\n" + "5. Prime Factor" + "\n" + "6. Quotient and Remainder" + "\n" + "7. Swap two Number" + "\n" + "8. Even Odd Number" + "\n" + "9. Vowels and Consonant" + "\n" + "10. Exit");
+                Console.WriteLine("1. Flip Coin" + "\n" + "2. Leap Year" + "\n" + "3. Power of Two" + "\n" + "4. Harmonic Number" + "\n" + "5. Prime Factor" + "\n" + "6. Quotient and Remainder" + "\n" + "7. Swap two Number" + "\n" + "8. Even Odd Number" + "\n" + "9. Vowels and Consonant" + "\n" + "10. Largest Among  three Numbers" + "\n" + "11. Exit");
                 int choice = Convert.ToInt32(Console.ReadLine());
                 switch (choice)
                 {
@@ -49,6 +49,10 @@ namespace BasicCoreProgramming
                     case 9:
                         VowelsAndConsonant vowel = new VowelsAndConsonant();
                         vowel.Vowel();
+                        break;
+                    case 10:
+                        LargestAmong3Numbers largest = new LargestAmong3Numbers();
+                        largest.Largest();
                         break;
                     default:
                         flag = false;
