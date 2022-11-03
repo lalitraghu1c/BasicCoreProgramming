@@ -10,7 +10,7 @@ namespace BasicCoreProgramming
             while (flag)
             {
                 Console.WriteLine("Welcome to Basic Core Programming Problems" + "\n" + "Enter your Choice");
-                Console.WriteLine("1. Flip Coin" + "\n" + "2. Leap Year" + "\n" + "3. Power of Two" + "\n" + "4. Harmonic Number" + "\n" + "5. Exit");
+                Console.WriteLine("1. Flip Coin" + "\n" + "2. Leap Year" + "\n" + "3. Power of Two" + "\n" + "4. Harmonic Number" + "\n" + "5. Prime Factor" + "\n" + "6. Exit");
                 int choice = Convert.ToInt32(Console.ReadLine());
                 switch (choice)
                 {
@@ -31,6 +31,10 @@ namespace BasicCoreProgramming
                         harmonic.Harmonic();
                         break;
                     case 5:
+                        PrimeFactor prime = new PrimeFactor();
+                        prime.Prime();
+                        break;
+                    default:
                         flag = false;
                         Console.WriteLine("Try Again");
                         break;
